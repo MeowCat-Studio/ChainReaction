@@ -1,3 +1,65 @@
 <resources>
-    <string name="app_name">ChainReaction</string>
+    <string name="app">连锁反应</string>
+    <string name="app_ver">v1.0</string>
+    <string name="app_right">© 2013–2020 MeowCat Studio</string>
+
+    <string name="title_new">开始新游戏</string>
+    <string name="title_continue">继续游戏</string>
+    <string name="title_tutorial">新手教程</string>
+    <string name="title_menu">菜单</string>
+
+    <string name="new_game_mode">游戏模式</string>
+    <string name="new_game_mode_single">单人游戏</string>
+    <string name="new_game_mode_multiple">双人游戏</string>
+    <string name="new_game_ai">对战AI等级</string>
+    <string name="new_game_ai_1">新手</string>
+    <string name="new_game_ai_2">入门</string>
+    <string name="new_game_ai_3">熟练</string>
+    <string name="new_game_ai_4">大师</string>
+    <string name="new_game_initiative">先后手</string>
+    <string name="new_game_initiative_1">蓝方先手</string>
+    <string name="new_game_initiative_2">红方先手</string>
+    <string name="new_game_size">棋盘大小</string>
+    <string name="new_game_size_1">3×3</string>
+    <string name="new_game_size_2">5×5</string>
+    <string name="new_game_size_3">7×7</string>
+    <string name="new_game_blood">最大血量</string>
+    <string name="new_game_blood_1">3</string>
+    <string name="new_game_blood_2">4</string>
+    <string name="new_game_blood_3">5</string>
+    <string name="new_game_blood_4">6</string>
+    <string name="new_game_start">开始游戏</string>
+
+    <string name="select_title"><![CDATA[对%s下达指令]]></string>
+    <string name="select_preview_hint">长按可预览~</string>
+    <string name="select_left">逆时针</string>
+    <string name="select_straight">跳过回合</string>
+    <string name="select_right">顺时针</string>
+    <string name="select_cancel">取消</string>
+    <string name="select_ok">确定</string>
+
+    <string name="menu_game_title">当前游戏</string>
+    <string name="menu_game_title_tutorial">教程模式</string>
+    <string name="menu_game_info"><![CDATA[回合数：%d，%s<br>%s]]></string>
+    <string name="menu_new">开始新游戏</string>
+    <string name="menu_speed">动画速度</string>
+    <string name="menu_speed_slow">慢速</string>
+    <string name="menu_speed_medium">中速</string>
+    <string name="menu_speed_fast">快速</string>
+    <string name="menu_speed_none">无动画</string>
+    <string name="menu_achievement">成就</string>
+    <string name="menu_about">关于</string>
+    <string name="menu_exit_save">保存并退出游戏</string>
+    <string name="menu_exit">退出游戏</string>
+
+    <string name="tutorial_1">在《连锁反应》中，你需要通过控制你方箭头的旋转来引起连锁反应，使对方箭头攻击对手而扣除生命值，同时防止对方箭头引起连锁反应攻击自己。当一方的血量归零时游戏结束。</string>
+    <string name="tutorial_2">当你旋转你方的箭头时，旋转后指向的下一个箭头会以相同方向再次旋转，直到箭头指向棋盘外或攻击一方玩家。</string>
+    <string name="tutorial_3">红方刚刚旋转了己方的红色箭头，箭头逆时针旋转后指向了其右侧的箭头，右侧的箭头同样以逆时针旋转，指向棋盘外，连锁反应结束。</string>
+    <string name="tutorial_4">现在到你了，请仔细思考旋转箭头引起的连锁反应，点击下方按键选择如何操作你的箭头。</string>
+    <string name="tutorial_5_1">做的不错！因为你的选择正确，对方被扣除了一点生命值。</string>
+    <string name="tutorial_5_2">真遗憾……因为你的选择错误，你被扣除了一点生命值。</string>
+    <string name="tutorial_6">教程使用的是单人模式，在新建游戏时，你也可以选择双人模式，也可以设置棋盘大小等。左滑可以调出游戏菜单。</string>
+    <string name="tutorial_7">教程到此结束，接下来你可以尝试取得胜利，也可以新建一局游戏。</string>
+    <string name="tutorial_next">下一步</string>
+
 </resources>

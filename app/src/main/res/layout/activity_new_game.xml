@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="6dp"
+        android:showDividers="middle"
+        android:divider="@drawable/shape_divider_menu">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/new_game_mode"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:showDividers="middle"
+                android:divider="@drawable/shape_divider_menu">
+
+                <TextView
+                    android:id="@+id/new_game_mode_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_game_mode_single"
+                    android:textColor="@color/chess_blue"/>
+
+                <TextView
+                    android:id="@+id/new_game_mode_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_game_mode_multiple"
+                    android:textColor="@color/gray"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/new_game_ai_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/new_game_ai"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <HorizontalScrollView
+            android:id="@+id/new_game_ai_select"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:showDividers="middle"
+                android:divider="@drawable/shape_divider_menu">
+
+                <TextView
+                    android:id="@+id/new_game_ai_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_game_ai_1"
+                    android:textColor="@color/chess_blue"/>
+
+                <TextView
+                    android:id="@+id/new_game_ai_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_game_ai_2"
+                    android:textColor="@color/gray" />
+
+                <TextView
+                    android:id="@+id/new_game_ai_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_game_ai_3"
+                    android:textColor="@color/gray"/>
+
+                <TextView
+                    android:id="@+id/new_game_ai_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_game_ai_4"
+                    android:textColor="@color/gray"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/new_game_initiative"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:showDividers="middle"
+                android:divider="@drawable/shape_divider_menu">
+
+                <TextView
+                    android:id="@+id/new_game_initiative_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_game_initiative_1"
+                    android:textColor="@color/chess_blue"/>
+
+                <TextView
+                    android:id="@+id/new_game_initiative_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_game_initiative_2"
+                    android:textColor="@color/gray"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/new_game_size"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:showDividers="middle"
+                android:divider="@drawable/shape_divider_menu">
+
+                <TextView
+                    android:id="@+id/new_game_size_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_game_size_1"
+                    android:textColor="@color/chess_blue"/>
+
+                <TextView
+                    android:id="@+id/new_game_size_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_game_size_2"
+                    android:textColor="@color/gray"/>
+
+                <TextView
+                    android:id="@+id/new_game_size_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_game_size_3"
+                    android:textColor="@color/gray"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/new_game_blood"
+            android:textColor="@android:color/black"
+            android:textSize="15sp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:showDividers="middle"
+                android:divider="@drawable/shape_divider_menu">
+
+                <TextView
+                    android:id="@+id/new_game_blood_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_game_blood_1"
+                    android:textColor="@color/chess_blue"/>
+
+                <TextView
+                    android:id="@+id/new_game_blood_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_game_blood_2"
+                    android:textColor="@color/gray"/>
+
+                <TextView
+                    android:id="@+id/new_game_blood_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_game_blood_3"
+                    android:textColor="@color/gray"/>
+
+                <TextView
+                    android:id="@+id/new_game_blood_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_game_blood_4"
+                    android:textColor="@color/gray"/>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+        
+        <com.heytap.wearable.support.widget.HeyShapeButton
+            android:layout_width="185dp"
+            android:layout_height="48dp"
+            android:text="@string/new_game_start"
+            android:onClick="clickNewGameStart"
+            app:heyBackgroundColor="#33444444"/>
+
+    </LinearLayout>
+
+</ScrollView>
