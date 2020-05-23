@@ -60,7 +60,7 @@ public class AchievementModel {
     public String toString() {
         JSONObject ach = new JSONObject();
         try {
-            String[] keys = (String[]) achievementMap.keySet().toArray();
+            String[] keys = achievementMap.keySet().toArray(new String[]{});
             for (String key : keys)
                 ach.put(key, achievementMap.get(key));
         } catch (JSONException | RuntimeException e) {
