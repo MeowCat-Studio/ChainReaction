@@ -1,2 +1,2 @@
-include ':app'
+include ':app_heytap'
 rootProject.name='ChainReaction'
