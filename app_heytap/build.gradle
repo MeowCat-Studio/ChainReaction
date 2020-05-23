@@ -14,6 +14,7 @@ android {
                 includeCompileClasspath = true
             }
         }
+        project.ext.set("archivesBaseName", "ChainReaction-HeyTap-" + versionName + "-" + versionCode + "-" + applicationId)
     }
     buildTypes {
         release {
