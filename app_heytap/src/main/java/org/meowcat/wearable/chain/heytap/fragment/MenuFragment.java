@@ -148,10 +148,10 @@ public class MenuFragment extends Fragment implements View.OnClickListener {
             sharedPreferencesUtil.putInt(SharedPreferencesUtil.animSpeed, animSpeed);
             setGameInfo();
         } else if (view.getId() == R.id.menu_online) {
-            new HeyDialog.HeyBuilder(ctx).setContentViewStyle(HeyDialog.STYLE_CONTENT)
+            new HeyDialog.HeyBuilder(getActivity()).setContentViewStyle(HeyDialog.STYLE_TITLE_CONTENT)
                     .setTitle(getString(R.string.menu_online_title))
                     .setMessage(getString(R.string.menu_online_message))
-                    .setNegativeButton(getString(R.string.menu_online_button), null).create().show();
+                    .setPositiveButton(getString(R.string.menu_online_button), null).create().show();
         } else if (view.getId() == R.id.menu_achievement) {
             Intent intent = new Intent(ctx, AchievementActivity.class);
             startActivity(intent);
