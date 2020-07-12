@@ -8,11 +8,16 @@ import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+
+import com.heytap.wearable.support.widget.HeyDialog;
+import com.heytap.wearable.support.widget.HeyToast;
 
 import org.greenrobot.eventbus.EventBus;
 import org.greenrobot.eventbus.Subscribe;
@@ -71,6 +76,7 @@ public class MenuFragment extends Fragment implements View.OnClickListener {
 
         rootLayout.findViewById(R.id.menu_new).setOnClickListener(this);
         rootLayout.findViewById(R.id.menu_speed).setOnClickListener(this);
+        rootLayout.findViewById(R.id.menu_online).setOnClickListener(this);
         rootLayout.findViewById(R.id.menu_achievement).setOnClickListener(this);
         rootLayout.findViewById(R.id.menu_about).setOnClickListener(this);
         rootLayout.findViewById(R.id.menu_exit).setOnClickListener(new View.OnClickListener() {
@@ -141,6 +147,11 @@ public class MenuFragment extends Fragment implements View.OnClickListener {
             if (animSpeed < 0) animSpeed = 4 + animSpeed;
             sharedPreferencesUtil.putInt(SharedPreferencesUtil.animSpeed, animSpeed);
             setGameInfo();
+        } else if (view.getId() == R.id.menu_online) {
+            new HeyDialog.HeyBuilder(ctx).setContentViewStyle(HeyDialog.STYLE_CONTENT)
+                    .setTitle(getString(R.string.menu_online_title))
+                    .setMessage(getString(R.string.menu_online_message))
+                    .setNegativeButton(getString(R.string.menu_online_button), null).create().show();
         } else if (view.getId() == R.id.menu_achievement) {
             Intent intent = new Intent(ctx, AchievementActivity.class);
             startActivity(intent);

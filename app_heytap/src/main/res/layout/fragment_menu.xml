@@ -72,6 +72,16 @@
         </LinearLayout>
 
         <TextView
+            android:id="@+id/menu_online"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="8dp"
+            android:text="@string/menu_online" />
+
+        <TextView
             android:id="@+id/menu_achievement"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

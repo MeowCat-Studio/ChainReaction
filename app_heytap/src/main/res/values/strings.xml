@@ -46,6 +46,10 @@
     <string name="menu_speed_medium">中速</string>
     <string name="menu_speed_fast">快速</string>
     <string name="menu_speed_none">无动画</string>
+    <string name="menu_online">局域网联机</string>
+    <string name="menu_online_title">敬请期待</string>
+    <string name="menu_online_message">近期上线</string>
+    <string name="menu_online_button">确定</string>
     <string name="menu_achievement">成就</string>
     <string name="menu_about">关于</string>
     <string name="menu_exit_save">保存并退出游戏</string>
