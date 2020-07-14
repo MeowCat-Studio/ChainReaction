@@ -1,0 +1,81 @@
+<resources>
+    <string name="app">連鎖反應</string>
+    <string name="app_right">© 2013–2020 MeowCat Studio</string>
+
+    <string name="title_new">開始新遊戲</string>
+    <string name="title_continue">繼續遊戲</string>
+    <string name="title_tutorial">新手教程</string>
+    <string name="title_menu">選單</string>
+
+    <string name="new_game_mode">遊戲模式</string>
+    <string name="new_game_mode_single">單人遊戲</string>
+    <string name="new_game_mode_multiple">雙人遊戲</string>
+    <string name="new_game_ai">對戰AI等級</string>
+    <string name="new_game_ai_1">新手</string>
+    <string name="new_game_ai_2">入門</string>
+    <string name="new_game_ai_3">熟練</string>
+    <string name="new_game_ai_4">大師</string>
+    <string name="new_game_initiative">回合順序</string>
+    <string name="new_game_initiative_1">藍方先手</string>
+    <string name="new_game_initiative_2">紅方先手</string>
+    <string name="new_game_size">棋盤大小</string>
+    <string name="new_game_size_1">3×3</string>
+    <string name="new_game_size_2">5×5</string>
+    <string name="new_game_size_3">7×7</string>
+    <string name="new_game_blood">最大生命值</string>
+    <string name="new_game_blood_1">3</string>
+    <string name="new_game_blood_2">4</string>
+    <string name="new_game_blood_3">5</string>
+    <string name="new_game_blood_4">6</string>
+    <string name="new_game_start">開始遊戲</string>
+
+    <string name="select_title"><![CDATA[對%s下達指令]]></string>
+    <string name="select_blue"><![CDATA[<font color="#2E9BC6">藍方箭頭</font>]]></string>
+    <string name="select_red"><![CDATA[<font color="#E53831">紅方箭頭</font>]]></string>
+    <string name="select_preview_hint">長按可預覽~</string>
+    <string name="select_left">逆時針</string>
+    <string name="select_straight">跳過回合</string>
+    <string name="select_right">順時針</string>
+    <string name="select_cancel">取消</string>
+    <string name="select_ok">確定</string>
+
+    <string name="menu_game_title">當前遊戲</string>
+    <string name="menu_game_title_tutorial">教程模式</string>
+    <string name="menu_game_info"><![CDATA[回合數：%d，%s<br>%s]]></string>
+    <string name="menu_new">開始新遊戲</string>
+    <string name="menu_speed">動畫速度</string>
+    <string name="menu_speed_slow">慢速</string>
+    <string name="menu_speed_medium">中速</string>
+    <string name="menu_speed_fast">快速</string>
+    <string name="menu_speed_none">無動畫</string>
+    <string name="menu_online">局域網聯機</string>
+    <string name="menu_online_title">敬請期待</string>
+    <string name="menu_online_message">近期上線</string>
+    <string name="menu_online_button">確定</string>
+    <string name="menu_achievement">成就</string>
+    <string name="menu_about">關於</string>
+    <string name="menu_exit_save">保存並退出遊戲</string>
+    <string name="menu_exit">退出遊戲</string>
+
+    <string name="tutorial_1">歡迎來到《連鎖反應》。在遊戲中，你需要通過控制你方箭頭的旋轉來引起連鎖反應，使對方箭頭攻擊對手而扣除生命值，同時防止對方箭頭引起連鎖反應攻擊自己。當一方的生命值歸零時遊戲結束。</string>
+    <string name="tutorial_2">當你旋轉你方的箭頭時，旋轉後指向的下一個箭頭會以相同方向再次旋轉，直到箭頭指向棋盤外或攻擊一方玩家。</string>
+    <string name="tutorial_3">紅方剛剛旋轉了己方的紅色箭頭，箭頭逆時針旋轉後指向了其右側的箭頭，右側的箭頭同樣以逆時針旋轉，指向棋盤外，連鎖反應結束。</string>
+    <string name="tutorial_4">現在到你了，請仔細思考旋轉箭頭引起的連鎖反應，點擊下方按鍵選擇如何操作你的箭頭。</string>
+    <string name="tutorial_5_1">做的不錯！因為你的選擇正確，對方被扣除了一點生命值。</string>
+    <string name="tutorial_5_2">真遺憾……因為你的選擇錯誤，你被扣除了一點生命值。</string>
+    <string name="tutorial_6">教程使用的是單人模式，在新建遊戲時，你也可以選擇雙人模式，也可以設定棋盤大小等。左滑可以調出遊戲菜單。</string>
+    <string name="tutorial_7">教程到此結束，接下來你可以嘗試取得勝利，也可以新建一局遊戲。</string>
+    <string name="tutorial_next">下一步</string>
+
+    <string name="game_victory_red">紅方勝</string>
+    <string name="game_victory_blue">藍方勝</string>
+
+    <string name="achievement_base_1">遊戲數</string>
+    <string name="achievement_base_2">總回合數</string>
+    <string name="achievement_base_3">旋轉過箭頭</string>
+    <string name="achievement_ai_1">戰勝新手AI</string>
+    <string name="achievement_ai_2">戰勝入門AI</string>
+    <string name="achievement_ai_3">戰勝熟練AI</string>
+    <string name="achievement_ai_4">戰勝大師AI</string>
+
+</resources>
