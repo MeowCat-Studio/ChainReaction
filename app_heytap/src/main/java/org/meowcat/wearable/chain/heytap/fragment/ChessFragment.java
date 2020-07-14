@@ -196,19 +196,19 @@ public class ChessFragment extends Fragment implements View.OnClickListener {
         rootLayout.findViewById(R.id.chess_hint_2).setVisibility(View.GONE);
 
         if (chessModel.getChessBlood().get(0) <= 0) {
-            HeyToast.showToast(ctx, "红方胜", Toast.LENGTH_SHORT);
-            achievementModel.recordAchievement("游戏数");
+            HeyToast.showToast(ctx, getString(R.string.game_victory_red), Toast.LENGTH_SHORT);
+            achievementModel.recordAchievement(AchievementModel.achievementBase1);
         } else if (chessModel.getChessBlood().get(1) <= 0) {
-            HeyToast.showToast(ctx, "蓝方胜", Toast.LENGTH_SHORT);
-            achievementModel.recordAchievement("游戏数");
+            HeyToast.showToast(ctx, getString(R.string.game_victory_blue), Toast.LENGTH_SHORT);
+            achievementModel.recordAchievement(AchievementModel.achievementBase1);
             if (chessModel.getChessMode() == 0)
-                achievementModel.recordAchievement("战胜新手AI");
+                achievementModel.recordAchievement(AchievementModel.achievementAi1);
             else if (chessModel.getChessMode() == 1)
-                achievementModel.recordAchievement("战胜入门AI");
+                achievementModel.recordAchievement(AchievementModel.achievementAi2);
             else if (chessModel.getChessMode() == 2)
-                achievementModel.recordAchievement("战胜熟练AI");
+                achievementModel.recordAchievement(AchievementModel.achievementAi3);
             else if (chessModel.getChessMode() == 3)
-                achievementModel.recordAchievement("战胜大师AI");
+                achievementModel.recordAchievement(AchievementModel.achievementAi4);
         } else {
             if (chessModel.getChessRound() % 2 == 0 ^ chessModel.isChessInitiative()) {
                 rootLayout.findViewById(R.id.chess_hint_1).setVisibility(View.VISIBLE);
@@ -218,7 +218,7 @@ public class ChessFragment extends Fragment implements View.OnClickListener {
                 rootLayout.findViewById(R.id.chess_hint_2).setVisibility(View.VISIBLE);
             }
             if ((chessModel.getChessRound() % 2 == 0) == chessModel.isChessInitiative())
-                achievementModel.recordAchievement("总回合数");
+                achievementModel.recordAchievement(AchievementModel.achievementBase2);
         }
     }
 
@@ -228,7 +228,7 @@ public class ChessFragment extends Fragment implements View.OnClickListener {
             player = 0;
             rootLayout.findViewById(R.id.chess_select).setVisibility(View.VISIBLE);
             ((TextView) rootLayout.findViewById(R.id.chess_select_title)).setText(Html.fromHtml(String.format(
-                    getResources().getString(R.string.select_title), "<font color=\"#2E9BC6\">蓝方箭头</font>")));
+                    getResources().getString(R.string.select_title), getString(R.string.select_blue))));
             ((TextView) rootLayout.findViewById(R.id.chess_select_button_hint)).setText(getResources().getString(R.string.select_left));
             rootLayout.findViewById(R.id.chess_select_icon_left).setBackgroundResource(R.drawable.shape_bg_select_icon);
             rootLayout.findViewById(R.id.chess_select_icon_straight).setBackgroundResource(0);
@@ -239,7 +239,7 @@ public class ChessFragment extends Fragment implements View.OnClickListener {
             player = 1;
             rootLayout.findViewById(R.id.chess_select).setVisibility(View.VISIBLE);
             ((TextView) rootLayout.findViewById(R.id.chess_select_title)).setText(Html.fromHtml(String.format(
-                    getResources().getString(R.string.select_title), "<font color=\"#E53831\">红方箭头</font>")));
+                    getResources().getString(R.string.select_title), getString(R.string.select_red))));
             ((TextView) rootLayout.findViewById(R.id.chess_select_button_hint)).setText(getResources().getString(R.string.select_left));
             rootLayout.findViewById(R.id.chess_select_icon_left).setBackgroundResource(R.drawable.shape_bg_select_icon);
             rootLayout.findViewById(R.id.chess_select_icon_straight).setBackgroundResource(0);

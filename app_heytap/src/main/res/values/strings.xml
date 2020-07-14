@@ -30,6 +30,8 @@
     <string name="new_game_start">开始游戏</string>
 
     <string name="select_title"><![CDATA[对%s下达指令]]></string>
+    <string name="select_blue"><![CDATA[<font color="#2E9BC6">蓝方箭头</font>]]></string>
+    <string name="select_red"><![CDATA[<font color="#E53831">红方箭头</font>]]></string>
     <string name="select_preview_hint">长按可预览~</string>
     <string name="select_left">逆时针</string>
     <string name="select_straight">跳过回合</string>
@@ -64,5 +66,16 @@
     <string name="tutorial_6">教程使用的是单人模式，在新建游戏时，你也可以选择双人模式，也可以设置棋盘大小等。左滑可以调出游戏菜单。</string>
     <string name="tutorial_7">教程到此结束，接下来你可以尝试取得胜利，也可以新建一局游戏。</string>
     <string name="tutorial_next">下一步</string>
+
+    <string name="game_victory_red">红方胜</string>
+    <string name="game_victory_blue">蓝方胜</string>
+
+    <string name="achievement_base_1">游戏数</string>
+    <string name="achievement_base_2">总回合数</string>
+    <string name="achievement_base_3">旋转过箭头</string>
+    <string name="achievement_ai_1">战胜新手AI</string>
+    <string name="achievement_ai_2">战胜入门AI</string>
+    <string name="achievement_ai_3">战胜熟练AI</string>
+    <string name="achievement_ai_4">战胜大师AI</string>
 
 </resources>

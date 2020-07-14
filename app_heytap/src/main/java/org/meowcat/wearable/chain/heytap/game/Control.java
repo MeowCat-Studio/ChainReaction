@@ -81,7 +81,7 @@ public class Control {
                 chessModel.getChessChess().get(i).add(tempChess.get(i).get(j));
         }
         if (recordAchievement)
-            achievementModel.recordAchievement("旋转过箭头", tempMove);
+            achievementModel.recordAchievement(AchievementModel.achievementBase3, tempMove);
         tempMove = 0;
         x = tempX;
         y = tempY;
