@@ -52,7 +52,7 @@ public class AchievementAdapter extends BaseAdapter {
         } else {
             viewHolder = (ViewHolder) convertView.getTag();
         }
-        viewHolder.name.setText(key);
+        viewHolder.name.setText(achievementModel.getAchievementStringMap().get(key));
         viewHolder.num.setText(String.valueOf(achievementModel.getAchievementMap().get(key)));
 
         return convertView;
