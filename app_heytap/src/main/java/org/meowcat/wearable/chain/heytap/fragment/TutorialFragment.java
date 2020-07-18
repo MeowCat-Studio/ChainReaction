@@ -27,6 +27,7 @@ import org.meowcat.wearable.chain.heytap.R;
 import org.meowcat.wearable.chain.heytap.adapter.ChessAdapter;
 import org.meowcat.wearable.chain.heytap.game.Ai;
 import org.meowcat.wearable.chain.heytap.game.Control;
+import org.meowcat.wearable.chain.heytap.model.AchievementModel;
 import org.meowcat.wearable.chain.heytap.model.ChessModel;
 import org.meowcat.wearable.chain.heytap.util.SharedPreferencesUtil;
 
@@ -37,6 +38,7 @@ public class TutorialFragment extends Fragment implements View.OnClickListener {
     private ChessModel chessModel;
     private Control control;
     private Ai ai;
+    private AchievementModel achievementModel;
 
     private ChessAdapter chessAdapter;
 
@@ -63,8 +65,9 @@ public class TutorialFragment extends Fragment implements View.OnClickListener {
         sharedPreferencesUtil = new SharedPreferencesUtil();
 
         chessModel = ChessModel.newInstanceFormTutorial();
-        control = new Control(chessModel, false);
+        control = new Control(chessModel, true);
         ai = new Ai(chessModel.getChessMode(), control, chessModel.getChessSize());
+        achievementModel = AchievementModel.getInstance();
 
         RecyclerView recyclerView = rootLayout.findViewById(R.id.tutorial_chess);
         chessAdapter = new ChessAdapter(chessModel, control, animSpeed);
@@ -181,11 +184,21 @@ public class TutorialFragment extends Fragment implements View.OnClickListener {
         rootLayout.findViewById(R.id.tutorial_hint_1).setVisibility(View.GONE);
         rootLayout.findViewById(R.id.tutorial_hint_2).setVisibility(View.GONE);
 
-        if (chessModel.getChessBlood().get(0) <= 0)
+        if (chessModel.getChessBlood().get(0) <= 0) {
             HeyToast.showToast(ctx, "红方胜", Toast.LENGTH_SHORT);
-        else if (chessModel.getChessBlood().get(1) <= 0)
+            achievementModel.recordAchievement(AchievementModel.achievementBase1);
+        } else if (chessModel.getChessBlood().get(1) <= 0) {
             HeyToast.showToast(ctx, "蓝方胜", Toast.LENGTH_SHORT);
-        else {
+            achievementModel.recordAchievement(AchievementModel.achievementBase1);
+            if (chessModel.getChessMode() == 0)
+                achievementModel.recordAchievement(AchievementModel.achievementAi1);
+            else if (chessModel.getChessMode() == 1)
+                achievementModel.recordAchievement(AchievementModel.achievementAi2);
+            else if (chessModel.getChessMode() == 2)
+                achievementModel.recordAchievement(AchievementModel.achievementAi3);
+            else if (chessModel.getChessMode() == 3)
+                achievementModel.recordAchievement(AchievementModel.achievementAi4);
+        } else {
             if (chessModel.getChessRound() % 2 == 0 ^ chessModel.isChessInitiative()) {
                 rootLayout.findViewById(R.id.tutorial_hint_1).setVisibility(View.VISIBLE);
                 rootLayout.findViewById(R.id.tutorial_hint_2).setVisibility(View.GONE);
@@ -193,6 +206,8 @@ public class TutorialFragment extends Fragment implements View.OnClickListener {
                 rootLayout.findViewById(R.id.tutorial_hint_1).setVisibility(View.GONE);
                 rootLayout.findViewById(R.id.tutorial_hint_2).setVisibility(View.VISIBLE);
             }
+            if ((chessModel.getChessRound() % 2 == 0) == chessModel.isChessInitiative())
+                achievementModel.recordAchievement(AchievementModel.achievementBase2);
         }
     }
 
