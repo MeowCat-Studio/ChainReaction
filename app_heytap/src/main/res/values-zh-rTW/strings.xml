@@ -20,8 +20,10 @@
     <string name="new_game_initiative_2">紅方先手</string>
     <string name="new_game_size">棋盤大小</string>
     <string name="new_game_size_1">3×3</string>
-    <string name="new_game_size_2">5×5</string>
-    <string name="new_game_size_3">7×7</string>
+    <string name="new_game_size_2">4×4</string>
+    <string name="new_game_size_3">5×5</string>
+    <string name="new_game_size_4">6×6</string>
+    <string name="new_game_size_5">7×7</string>
     <string name="new_game_blood">最大生命值</string>
     <string name="new_game_blood_1">3</string>
     <string name="new_game_blood_2">4</string>

@@ -31,7 +31,7 @@ public class NewGameActivity extends AppCompatActivity implements View.OnClickLi
                 {R.id.new_game_ai_1, R.id.new_game_ai_2, R.id.new_game_ai_3, R.id.new_game_ai_4},
                 {R.id.new_game_initiative_1, R.id.new_game_initiative_2},
                 {R.id.new_game_blood_1, R.id.new_game_blood_2, R.id.new_game_blood_3, R.id.new_game_blood_4},
-                {R.id.new_game_size_1, R.id.new_game_size_2, R.id.new_game_size_3}};
+                {R.id.new_game_size_1, R.id.new_game_size_2, R.id.new_game_size_3, R.id.new_game_size_4, R.id.new_game_size_5}};
 
         for (int[] i : selectView)
             for (int j : i)
@@ -67,7 +67,7 @@ public class NewGameActivity extends AppCompatActivity implements View.OnClickLi
     }
 
     public void clickNewGameStart(View view) {
-        chessModel = ChessModel.newInstanceFormNewGame(select[3] + 3, select[2] == 0, select[4] * 2 + 3, select[0] == 1 ? -1 : select[1]);
+        chessModel = ChessModel.newInstanceFormNewGame(select[3] + 3, select[2] == 0, select[4] + 3, select[0] == 1 ? -1 : select[1]);
         returnIntent.putExtra("chessModel", chessModel);
         setResult(RESULT_OK, returnIntent);
         finish();

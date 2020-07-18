@@ -1,81 +1,83 @@
 <resources>
-    <string name="app">连锁反应</string>
+    <string name="app">Chain Reaction</string>
     <string name="app_right">© 2013–2020 MeowCat Studio</string>
 
-    <string name="title_new">开始新游戏</string>
-    <string name="title_continue">继续游戏</string>
-    <string name="title_tutorial">新手教程</string>
-    <string name="title_menu">菜单</string>
+    <string name="title_new">New Game</string>
+    <string name="title_continue">Continue</string>
+    <string name="title_tutorial">Tutorial</string>
+    <string name="title_menu">Menu</string>
 
-    <string name="new_game_mode">游戏模式</string>
-    <string name="new_game_mode_single">单人游戏</string>
-    <string name="new_game_mode_multiple">双人游戏</string>
-    <string name="new_game_ai">对战AI等级</string>
-    <string name="new_game_ai_1">新手</string>
-    <string name="new_game_ai_2">入门</string>
-    <string name="new_game_ai_3">熟练</string>
-    <string name="new_game_ai_4">大师</string>
-    <string name="new_game_initiative">回合顺序</string>
-    <string name="new_game_initiative_1">蓝方先手</string>
-    <string name="new_game_initiative_2">红方先手</string>
-    <string name="new_game_size">棋盘大小</string>
+    <string name="new_game_mode">Game mode</string>
+    <string name="new_game_mode_single">Signle-player</string>
+    <string name="new_game_mode_multiple">Mutiple-player</string>
+    <string name="new_game_ai">AI bot Level</string>
+    <string name="new_game_ai_1">Level 1</string>
+    <string name="new_game_ai_2">Level 2</string>
+    <string name="new_game_ai_3">Level 3</string>
+    <string name="new_game_ai_4">Level 4</string>
+    <string name="new_game_initiative">Turn order</string>
+    <string name="new_game_initiative_1">Blue first</string>
+    <string name="new_game_initiative_2">Red first</string>
+    <string name="new_game_size">Board size</string>
     <string name="new_game_size_1">3×3</string>
-    <string name="new_game_size_2">5×5</string>
-    <string name="new_game_size_3">7×7</string>
-    <string name="new_game_blood">最大生命值</string>
+    <string name="new_game_size_2">4×4</string>
+    <string name="new_game_size_3">5×5</string>
+    <string name="new_game_size_4">6×6</string>
+    <string name="new_game_size_5">7×7</string>
+    <string name="new_game_blood">Max Hp</string>
     <string name="new_game_blood_1">3</string>
     <string name="new_game_blood_2">4</string>
     <string name="new_game_blood_3">5</string>
     <string name="new_game_blood_4">6</string>
-    <string name="new_game_start">开始游戏</string>
+    <string name="new_game_start">Start game</string>
 
-    <string name="select_title"><![CDATA[对%s下达指令]]></string>
-    <string name="select_blue"><![CDATA[<font color="#2E9BC6">蓝方箭头</font>]]></string>
-    <string name="select_red"><![CDATA[<font color="#E53831">红方箭头</font>]]></string>
-    <string name="select_preview_hint">长按可预览~</string>
-    <string name="select_left">逆时针</string>
-    <string name="select_straight">跳过回合</string>
-    <string name="select_right">顺时针</string>
-    <string name="select_cancel">取消</string>
-    <string name="select_ok">确定</string>
+    <string name="select_title"><![CDATA[Give instructions to %s]]></string>
+    <string name="select_blue"><![CDATA[<font color="#2E9BC6">Blue Arrow</font>]]></string>
+    <string name="select_red"><![CDATA[<font color="#E53831">Red Arrow</font>]]></string>
+    <string name="select_preview_hint">Long press to preview</string>
+    <string name="select_left">Anti-Clockwise</string>
+    <string name="select_straight">Skip</string>
+    <string name="select_right">Clockwise</string>
+    <string name="select_cancel">Cancel</string>
+    <string name="select_ok">OK</string>
 
-    <string name="menu_game_title">当前游戏</string>
-    <string name="menu_game_title_tutorial">教程模式</string>
-    <string name="menu_game_info"><![CDATA[回合数：%d，%s<br>%s]]></string>
-    <string name="menu_new">开始新游戏</string>
-    <string name="menu_speed">动画速度</string>
-    <string name="menu_speed_slow">慢速</string>
-    <string name="menu_speed_medium">中速</string>
-    <string name="menu_speed_fast">快速</string>
-    <string name="menu_speed_none">无动画</string>
-    <string name="menu_online">局域网联机</string>
-    <string name="menu_online_title">敬请期待</string>
-    <string name="menu_online_message">近期上线</string>
-    <string name="menu_online_button">确定</string>
-    <string name="menu_achievement">成就</string>
-    <string name="menu_about">关于</string>
-    <string name="menu_exit_save">保存并退出游戏</string>
-    <string name="menu_exit">退出游戏</string>
+    <string name="menu_game_title">Current game</string>
+    <string name="menu_game_title_tutorial">Tutorial</string>
+    <string name="menu_game_info"><![CDATA[Rounds：%d，%s<br>%s]]></string>
+    <string name="menu_new">Start new game</string>
+    <string name="menu_speed">Animation speed</string>
+    <string name="menu_speed_slow">Slow</string>
+    <string name="menu_speed_medium">Medium</string>
+    <string name="menu_speed_fast">Fast</string>
+    <string name="menu_speed_none">Disable</string>
+    <string name="menu_online">Online game</string>
+    <string name="menu_online_title">Coming soon</string>
+    <string name="menu_online_message">Recently launched</string>
+    <string name="menu_online_button">OK</string>
+    <string name="menu_achievement">Achievement</string>
+    <string name="menu_about">About Game</string>
+    <string name="menu_exit_save">Save and exit</string>
+    <string name="menu_exit">Exit</string>
 
-    <string name="tutorial_1">欢迎来到《连锁反应》。在游戏中，你需要通过控制你方箭头的旋转来引起连锁反应，使对方箭头攻击对手而扣除生命值，同时防止对方箭头引起连锁反应攻击自己。当一方的生命值归零时游戏结束。</string>
-    <string name="tutorial_2">当你旋转你方的箭头时，旋转后指向的下一个箭头会以相同方向再次旋转，直到箭头指向棋盘外或攻击一方玩家。</string>
-    <string name="tutorial_3">红方刚刚旋转了己方的红色箭头，箭头逆时针旋转后指向了其右侧的箭头，右侧的箭头同样以逆时针旋转，指向棋盘外，连锁反应结束。</string>
-    <string name="tutorial_4">现在到你了，请仔细思考旋转箭头引起的连锁反应，点击下方按键选择如何操作你的箭头。</string>
-    <string name="tutorial_5_1">做的不错！因为你的选择正确，对方被扣除了一点生命值。</string>
-    <string name="tutorial_5_2">真遗憾……因为你的选择错误，你被扣除了一点生命值。</string>
-    <string name="tutorial_6">教程使用的是单人模式，在新建游戏时，你也可以选择双人模式，也可以设置棋盘大小等。左滑可以调出游戏菜单。</string>
-    <string name="tutorial_7">教程到此结束，接下来你可以尝试取得胜利，也可以新建一局游戏。</string>
-    <string name="tutorial_next">下一步</string>
+    <string name="tutorial_1">Welcome to Chain Reaction. In the game, you need to control the rotation of your arrows to cause chain reaction, so that the opponent\'s arrow will attack his opponent and deduct the life value, and prevent the arrows from chain reaction to attack himself. When a party\'s health returns to zero, the game ends.</string>
+    <string name="tutorial_2">When you rotate your arrow, the next arrow that rotates will rotate again in the same direction until the arrow points to the chessboard or attacks one game player.</string>
+    <string name="tutorial_3">The red side has just rotated its red arrow, the arrow turned against the clockwise and pointed to the arrow on its right side, the arrow on the right also rotated counterclockwise, pointing to the chessboard, and the chain reaction ended.</string>
+    <string name="tutorial_4">Now it\'s your turn. Please think carefully about the chain reaction caused by the rotating arrow. Click the button below to select how to operate your arrow.</string>
+    <string name="tutorial_5_1">Well done! Because of your right choice, the opponent has been deducted a little health value.</string>
+    <string name="tutorial_5_2">What a pity… Because of your wrong choice, you have been deducted a little health.</string>
+    <string name="tutorial_6">The tutorial uses single player mode. When creating a new game, you can also choose double mode or set the size of chessboard. Slide left to open the game menu.</string>
+    <string name="tutorial_7">This is the end of the tutorial. You can try to win or create a new game.</string>
+    <string name="tutorial_next">Next</string>
 
-    <string name="game_victory_red">红方胜</string>
-    <string name="game_victory_blue">蓝方胜</string>
+    <string name="game_victory_red">Red Win</string>
+    <string name="game_victory_blue">Blue Win</string>
 
-    <string name="achievement_base_1">游戏数</string>
-    <string name="achievement_base_2">总回合数</string>
-    <string name="achievement_base_3">旋转过箭头</string>
-    <string name="achievement_ai_1">战胜新手AI</string>
-    <string name="achievement_ai_2">战胜入门AI</string>
-    <string name="achievement_ai_3">战胜熟练AI</string>
-    <string name="achievement_ai_4">战胜大师AI</string>
+    <string name="achievement_base_1">Game count</string>
+    <string name="achievement_base_2">Total round</string>
+    <string name="achievement_base_3">Arrow changes</string>
+    <string name="achievement_ai_1">Beat AI Level 1</string>
+    <string name="achievement_ai_2">Beat AI Level 2</string>
+    <string name="achievement_ai_3">Beat AI Level 3</string>
+    <string name="achievement_ai_4">Beat AI Level 4</string>
 
 </resources>

@@ -163,7 +163,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/new_game_size_2"
-                    android:textColor="@color/gray" />
+                    android:textColor="@color/gray"
+                    android:visibility="gone" />
 
                 <TextView
                     android:id="@+id/new_game_size_3"
@@ -171,6 +172,22 @@
                     android:layout_height="wrap_content"
                     android:text="@string/new_game_size_3"
                     android:textColor="@color/gray" />
+
+                <TextView
+                    android:id="@+id/new_game_size_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_game_size_4"
+                    android:textColor="@color/gray"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/new_game_size_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_game_size_5"
+                    android:textColor="@color/gray" />
+
 
             </LinearLayout>
         </HorizontalScrollView>
