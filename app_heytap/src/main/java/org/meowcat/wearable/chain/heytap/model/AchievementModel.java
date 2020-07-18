@@ -75,6 +75,13 @@ public class AchievementModel {
             achievementMap.put(key, achievementMap.get(key) + value);
     }
 
+    public void clearAchievement() {
+        sharedPreferencesUtil.removeValue(SharedPreferencesUtil.achievement);
+        String[] keys = achievementMap.keySet().toArray(new String[]{});
+        for (String key : keys)
+            achievementMap.put(key, 0);
+    }
+
     @NonNull
     @Override
     public String toString() {

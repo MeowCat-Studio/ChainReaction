@@ -79,5 +79,9 @@
     <string name="achievement_ai_2">战胜入门AI</string>
     <string name="achievement_ai_3">战胜熟练AI</string>
     <string name="achievement_ai_4">战胜大师AI</string>
+    <string name="achievement_clear">清空成就统计</string>
+    <string name="achievement_clear_message">你确认要清空吗？</string>
+    <string name="achievement_clear_cancel">取消</string>
+    <string name="achievement_clear_ok">确定</string>
 
 </resources>

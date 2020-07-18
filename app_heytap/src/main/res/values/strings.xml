@@ -79,5 +79,9 @@
     <string name="achievement_ai_2">Beat AI Level 2</string>
     <string name="achievement_ai_3">Beat AI Level 3</string>
     <string name="achievement_ai_4">Beat AI Level 4</string>
+    <string name="achievement_clear">Wipe achievement statistics</string>
+    <string name="achievement_clear_message">Are you sure you want to clear it?</string>
+    <string name="achievement_clear_cancel">Cancel</string>
+    <string name="achievement_clear_ok">OK</string>
 
 </resources>
