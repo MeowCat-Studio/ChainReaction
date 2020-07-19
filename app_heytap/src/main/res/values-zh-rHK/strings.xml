@@ -83,5 +83,8 @@
     <string name="achievement_clear_message">你確認要清空嗎？</string>
     <string name="achievement_clear_cancel">取消</string>
     <string name="achievement_clear_ok">確定</string>
+    <string name="title_first_message">看起來你是第一次玩《連鎖反應》，需要學習教程嗎？</string>
+    <string name="title_first_cancel">取消</string>
+    <string name="title_first_ok">確定</string>
 
 </resources>

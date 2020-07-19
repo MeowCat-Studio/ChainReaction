@@ -83,5 +83,8 @@
     <string name="achievement_clear_message">Are you sure you want to clear it?</string>
     <string name="achievement_clear_cancel">Cancel</string>
     <string name="achievement_clear_ok">OK</string>
+    <string name="title_first_message">It seems like you are the first time for playing \"chain reaction\". Do you need a tutorial?</string>
+    <string name="title_first_cancel">Cancel</string>
+    <string name="title_first_ok">OK</string>
 
 </resources>

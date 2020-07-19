@@ -15,11 +15,14 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.heytap.wearable.support.widget.HeyDialog;
+
 import org.meowcat.wearable.chain.heytap.MeowCatApplication;
 import org.meowcat.wearable.chain.heytap.R;
 import org.meowcat.wearable.chain.heytap.activity.NewGameActivity;
 import org.meowcat.wearable.chain.heytap.adapter.ChessAdapter;
 import org.meowcat.wearable.chain.heytap.game.Control;
+import org.meowcat.wearable.chain.heytap.model.AchievementModel;
 import org.meowcat.wearable.chain.heytap.model.ChessModel;
 import org.meowcat.wearable.chain.heytap.util.SharedPreferencesUtil;
 
@@ -47,7 +50,7 @@ public class TitleFragment extends Fragment implements View.OnClickListener {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        ctx = MeowCatApplication.getContext();
+        ctx = getActivity();
         View rootLayout = inflater.inflate(R.layout.fragment_title, container, false);
         sharedPreferencesUtil = new SharedPreferencesUtil();
 
@@ -96,14 +99,37 @@ public class TitleFragment extends Fragment implements View.OnClickListener {
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.title_new) {
-            Intent intent = new Intent(ctx, NewGameActivity.class);
-            startActivityForResult(intent, 0);
+            if (sharedPreferencesUtil.getBoolean(SharedPreferencesUtil.firstGame, true)) {
+                new HeyDialog.HeyBuilder(ctx).setContentViewStyle(HeyDialog.STYLE_CONTENT)
+                        .setMessage(getString(R.string.title_first_message))
+                        .setNegativeButton(getString(R.string.title_first_cancel), new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                Intent intent = new Intent(ctx, NewGameActivity.class);
+                                startActivityForResult(intent, 0);
+                                sharedPreferencesUtil.putBoolean(SharedPreferencesUtil.firstGame, false);
+                            }
+                        })
+                        .setPositiveButton(getString(R.string.title_first_ok), new View.OnClickListener() {
+                            @Override
+                            public void onClick(View v) {
+                                titleFragmentListener.onTitleFragmentTutorial();
+                                sharedPreferencesUtil.putBoolean(SharedPreferencesUtil.firstGame, false);
+                            }
+                        }).create().show();
+            } else {
+                Intent intent = new Intent(ctx, NewGameActivity.class);
+                startActivityForResult(intent, 0);
+            }
         } else if (view.getId() == R.id.title_continue)
             titleFragmentListener.onTitleFragmentStart(ChessModel.newInstanceFormJSON(sharedPreferencesUtil.getString(SharedPreferencesUtil.game, "{}")));
-        else if (view.getId() == R.id.title_tutorial)
+        else if (view.getId() == R.id.title_tutorial) {
             titleFragmentListener.onTitleFragmentTutorial();
-        else if (view.getId() == R.id.title_menu)
+            sharedPreferencesUtil.putBoolean(SharedPreferencesUtil.firstGame, false);
+        } else if (view.getId() == R.id.title_menu) {
             titleFragmentListener.onTitleFragmentMenu();
+            sharedPreferencesUtil.putBoolean(SharedPreferencesUtil.firstGame, false);
+        }
     }
 
     @Override

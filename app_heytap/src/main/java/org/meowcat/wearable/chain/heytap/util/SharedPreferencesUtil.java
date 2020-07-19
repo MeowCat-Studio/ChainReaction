@@ -13,6 +13,7 @@ public class SharedPreferencesUtil {
     public static String game = "game";
     public static String animSpeed = "anim_speed";
     public static String achievement = "achievement";
+    public static String firstGame = "firstGame";
 
     private SharedPreferences sharedPreferences;
     private android.content.SharedPreferences.Editor editor;
@@ -41,6 +42,14 @@ public class SharedPreferencesUtil {
 
     public void putInt(String key, int value) {
         editor.putInt(key, value).commit();
+    }
+
+    public boolean getBoolean(String key, boolean def) {
+        return sharedPreferences.getBoolean(key, def);
+    }
+
+    public void putBoolean(String key, boolean value) {
+        editor.putBoolean(key, value).commit();
     }
 
     public void removeValue(String key) {
